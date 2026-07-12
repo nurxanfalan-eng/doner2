@@ -13,7 +13,7 @@ const PRODUCTS = [
   { id:2,  name:"Tələbə Dürüm",    price:3.0,  category:"fastfood",  image:"assets/susi.jpg",  desc:"Büdcəyə uyğun, eyni keyfiyyətli dönər əti ilə hazırlanmış gənc dürümü. Dadlı və sərfəli!", popular:true  },
   { id:3,  name:"Duble Dürüm",     price:4.5,  category:"fastfood",  image:"assets/susi.jpg",  desc:"İkiqat dönər əti ilə hazırlanmış böyük dürüm. Daha çox ərzaq, daha çox ləzzət – iştahı böyük olanlar üçün ideal!", popular:true  },
   { id:4,  name:"Mega Dürüm",      price:5.5,  category:"fastfood",  image:"assets/susi.jpg",  desc:"Nəhəng porsiya dönər əti, bol tərəvəz və xüsusi sous ilə hazırlanmış mega dürüm. Əsl doyumlu seçim!", popular:false },
-  { id:5,  name:"Suşi",            price:6.0,  category:"fastfood",  image:"assets/susi.jpg",  desc:"Keyfiyyətli dönər əti ilə hazırlanmış xüsusi suşi. Unikal bir ləzzət təcrübəsi – siz də sınayın!", popular:true  },
+  { id:5,  name:"Suşi",            price:6.0,  category:"fastfood",  image:"assets/sushi.jpg",  desc:"Keyfiyyətli dönər əti ilə hazırlanmış xüsusi suşi. Unikal bir ləzzət təcrübəsi – siz də sınayın!", popular:true  },
   { id:6,  name:"Fanta 0.5L",      price:1.5,  category:"icecekler", image:"assets/fanta.jpg", desc:"Soyuq və seyreltici portağal Fanta. Yemək yanında mükəmməl seçim!", popular:false },
   { id:7,  name:"Coca-Cola 0.5L",  price:1.5,  category:"icecekler", image:"assets/fanta.jpg", desc:"Klassik soyuq Coca-Cola. Hər yemək yanında yer alan ikonik içki!", popular:false },
   { id:8,  name:"Su 0.5L",         price:0.5,  category:"icecekler", image:"assets/fanta.jpg", desc:"Soyuq mineral su. Seyrəltici və sağlam!", popular:false },
