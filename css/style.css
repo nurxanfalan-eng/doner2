@@ -718,3 +718,23 @@ button { cursor: pointer; border: none; outline: none; background: none; }
    ============================================ */
 .hidden { display: none !important; }
 .text-center { text-align: center; }
+
+/* ============================================
+   SPA - PAGE ROUTING
+   ============================================ */
+.page-section {
+  display: none;
+  min-height: 100vh;
+}
+.page-section.active-page {
+  display: block;
+}
+
+/* Smooth page transition */
+.page-section.active-page {
+  animation: pageFadeIn .18s ease;
+}
+@keyframes pageFadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
