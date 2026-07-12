@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>618 Dönər | Ana Səhifə</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo.png" alt="618 Dönər Logo" class="logo-img" />
+      <span class="logo-text">618 Dönər</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menyu aç">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Ana Səhifə</a></li>
+      <li><a href="menu.html">Menyu</a></li>
+      <li><a href="gallery.html">Qalerya</a></li>
+      <li><a href="order.html">Sifariş</a></li>
+      <li><a href="about.html">Haqqında</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Əlaqə</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- CART FLOATING BUTTON -->
+<button class="cart-fab" id="cartFab" onclick="window.location.href='order.html'">
+  <i class="fas fa-shopping-basket"></i>
+  <span class="cart-badge" id="cartBadge">0</span>
+</button>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 class="hero-title">Ən Dadlı Dönər <br/><span>Sizin Üçün!</span></h1>
+    <p class="hero-sub">Təzə, keyfiyyətli, sürətli çatdırılma</p>
+    <div class="hero-badges">
+      <span class="badge"><i class="fas fa-shipping-fast"></i> Pulsuz Çatdırılma</span>
+      <span class="badge"><i class="fas fa-star"></i> Yüksək Keyfiyyət</span>
+      <span class="badge"><i class="fas fa-clock"></i> Sürətli Servis</span>
+    </div>
+    <div class="hero-btns">
+      <a href="menu.html" class="btn-primary">Menyuya Bax</a>
+      <a href="order.html" class="btn-outline">Sifariş Ver</a>
+    </div>
+  </div>
+</section>
+
+<!-- QUICK FEATURES -->
+<section class="features-section">
+  <div class="container">
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-fire"></i></div>
+        <h3>Təzə Hazırlanmış</h3>
+        <p>Hər sifarişiniz üçün təzə hazırlanır</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-truck"></i></div>
+        <h3>Pulsuz Çatdırılma</h3>
+        <p>Bütün sifarişlər üçün pulsuz çatdırılma</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-medal"></i></div>
+        <h3>Keyfiyyətli Məhsul</h3>
+        <p>Ən yüksək keyfiyyətli ingredientlər</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+        <h3>Sürətli Servis</h3>
+        <p>Sifarişiniz ən qısa zamanda çatdırılır</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POPULAR ITEMS PREVIEW -->
+<section class="popular-section">
+  <div class="container">
+    <h2 class="section-title">Populyar Məhsullar</h2>
+    <div class="popular-grid" id="popularGrid"></div>
+    <div class="center-btn">
+      <a href="menu.html" class="btn-primary">Bütün Menyuya Bax</a>
+    </div>
+  </div>
+</section>
+
+<!-- FREE DELIVERY BANNER -->
+<section class="delivery-banner">
+  <div class="container">
+    <div class="delivery-inner">
+      <div class="delivery-icon"><i class="fas fa-motorcycle"></i></div>
+      <div class="delivery-text">
+        <h2>Çatdırılma Pulsuzdur!</h2>
+        <p>Hər hansı məbləğdə sifarişiniz evinizdə olsun</p>
+      </div>
+      <a href="order.html" class="btn-primary">İndi Sifariş Ver</a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY PREVIEW -->
+<section class="gallery-preview-section">
+  <div class="container">
+    <h2 class="section-title">Qalerya</h2>
+    <div class="gallery-preview-grid">
+      <div class="gp-item" onclick="window.location.href='gallery.html'">
+        <img src="assets/food1.jpg" alt="Dönər" loading="lazy" />
+        <div class="gp-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gp-item" onclick="window.location.href='gallery.html'">
+        <img src="assets/susi.jpg" alt="Keyfiyyətli ət" loading="lazy" />
+        <div class="gp-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gp-item" onclick="window.location.href='gallery.html'">
+        <img src="assets/fanta.jpg" alt="Fanta" loading="lazy" />
+        <div class="gp-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+    </div>
+    <div class="center-btn">
+      <a href="gallery.html" class="btn-outline">Bütün Şəkilləri Gör</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Logo" class="footer-logo" />
+        <span>618 Dönər</span>
+        <p>Ən dadlı dönər təcrübəsi üçün</p>
+      </div>
+      <div class="footer-links">
+        <h4>Keçidlər</h4>
+        <ul>
+          <li><a href="menu.html">Menyu</a></li>
+          <li><a href="gallery.html">Qalerya</a></li>
+          <li><a href="order.html">Sifariş</a></li>
+          <li><a href="about.html">Haqqında</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Əlaqə</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Əlaqə</h4>
+        <a href="https://wa.me/994559406018" target="_blank"><i class="fab fa-whatsapp"></i> +994 55 940 60 18</a>
+        <a href="https://www.instagram.com/618_acc?igsh=eGZ6NDBqbnltbzJv" target="_blank"><i class="fab fa-instagram"></i> @618_acc</a>
+        <a href="https://maps.app.goo.gl/seymCjLMXh1QxUP86" target="_blank"><i class="fas fa-map-marker-alt"></i> Məkanımız</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 618 Dönər. Bütün hüquqlar qorunur.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

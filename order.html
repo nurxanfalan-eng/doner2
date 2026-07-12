@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>618 Dönər | Sifariş</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo.png" alt="618 Dönər Logo" class="logo-img" />
+      <span class="logo-text">618 Dönər</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menyu aç">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Ana Səhifə</a></li>
+      <li><a href="menu.html">Menyu</a></li>
+      <li><a href="gallery.html">Qalerya</a></li>
+      <li><a href="order.html" class="active">Sifariş</a></li>
+      <li><a href="about.html">Haqqında</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Əlaqə</a></li>
+    </ul>
+  </div>
+</nav>
+
+<button class="cart-fab" id="cartFab" onclick="document.getElementById('orderCartSection').scrollIntoView({behavior:'smooth'})">
+  <i class="fas fa-shopping-basket"></i>
+  <span class="cart-badge" id="cartBadge">0</span>
+</button>
+
+<section class="page-header">
+  <div class="container">
+    <h1>Sifariş Ver</h1>
+    <p>Sifarişinizi asanlıqla verin</p>
+  </div>
+</section>
+
+<section class="order-section">
+  <div class="container">
+    <div class="order-layout">
+
+      <!-- Cart Column -->
+      <div class="order-cart-col" id="orderCartSection">
+        <div class="order-card">
+          <h2 class="order-card-title"><i class="fas fa-shopping-basket"></i> Səbətiniz</h2>
+          <div id="cartItemsList">
+            <div class="empty-cart">
+              <i class="fas fa-shopping-basket"></i>
+              <p>Səbətiniz boşdur</p>
+              <a href="menu.html" class="btn-primary">Menyuya Bax</a>
+            </div>
+          </div>
+          <div class="cart-total-row" id="cartTotalRow" style="display:none;">
+            <div class="cart-total-line">
+              <span>Çatdırılma:</span>
+              <span class="text-green">Pulsuz</span>
+            </div>
+            <div class="cart-total-line total-big">
+              <span>Cəmi:</span>
+              <span id="cartTotalDisplay">0.00 AZN</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form Column -->
+      <div class="order-form-col">
+        <div class="order-card">
+          <h2 class="order-card-title"><i class="fas fa-clipboard-list"></i> Sifariş Məlumatları</h2>
+          <form id="orderForm" class="order-form" novalidate>
+
+            <div class="form-group">
+              <label for="customerName"><i class="fas fa-user"></i> Ad Soyad *</label>
+              <input type="text" id="customerName" placeholder="Adınızı daxil edin" required />
+              <span class="field-error" id="nameError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="customerPhone"><i class="fas fa-phone"></i> Telefon *</label>
+              <input type="tel" id="customerPhone" placeholder="+994 xx xxx xx xx" required />
+              <span class="field-error" id="phoneError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="customerAddress"><i class="fas fa-home"></i> Ünvan *</label>
+              <input type="text" id="customerAddress" placeholder="Küçə, bina, mənzil..." required />
+              <span class="field-error" id="addressError"></span>
+            </div>
+
+            <div class="form-group">
+              <label><i class="fas fa-map-marker-alt"></i> Məkanınız (Konum)</label>
+              <div class="location-row">
+                <input type="text" id="locationLink" placeholder="Google Maps linki avtomatik alınacaq..." readonly />
+                <button type="button" class="btn-loc" id="getLocBtn">
+                  <i class="fas fa-crosshairs"></i> Konum Al
+                </button>
+              </div>
+              <span class="loc-status" id="locStatus"></span>
+              <span class="field-error" id="locError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="orderNote"><i class="fas fa-sticky-note"></i> Əlavə Qeyd</label>
+              <textarea id="orderNote" rows="3" placeholder="Əlavə qeydlərinizi buraya yazın..."></textarea>
+            </div>
+
+            <!-- Selected Items Summary -->
+            <div class="order-items-summary" id="orderItemsSummary" style="display:none;">
+              <h3>Seçilmiş Məhsullar:</h3>
+              <div id="orderItemsList"></div>
+              <div class="order-total-line">
+                <strong>Cəmi: <span id="orderTotalSummary">0.00 AZN</span></strong>
+              </div>
+            </div>
+            <div class="order-empty-msg" id="orderEmptyMsg">
+              <p><i class="fas fa-info-circle"></i> Sifariş üçün əvvəlcə <a href="menu.html">menyudan</a> məhsul seçin</p>
+            </div>
+
+            <button type="submit" class="btn-primary order-submit-btn" id="orderSubmitBtn">
+              <i class="fab fa-whatsapp"></i> WhatsApp ilə Sifariş Ver
+            </button>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Logo" class="footer-logo" />
+        <span>618 Dönər</span>
+        <p>Ən dadlı dönər təcrübəsi üçün</p>
+      </div>
+      <div class="footer-links">
+        <h4>Keçidlər</h4>
+        <ul>
+          <li><a href="menu.html">Menyu</a></li>
+          <li><a href="gallery.html">Qalerya</a></li>
+          <li><a href="order.html">Sifariş</a></li>
+          <li><a href="about.html">Haqqında</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Əlaqə</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Əlaqə</h4>
+        <a href="https://wa.me/994559406018" target="_blank"><i class="fab fa-whatsapp"></i> +994 55 940 60 18</a>
+        <a href="https://www.instagram.com/618_acc?igsh=eGZ6NDBqbnltbzJv" target="_blank"><i class="fab fa-instagram"></i> @618_acc</a>
+        <a href="https://maps.app.goo.gl/seymCjLMXh1QxUP86" target="_blank"><i class="fas fa-map-marker-alt"></i> Məkanımız</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 618 Dönər. Bütün hüquqlar qorunur.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/order.js"></script>
+</body>
+</html>

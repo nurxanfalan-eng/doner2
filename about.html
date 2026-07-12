@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>618 Dönər | Haqqında</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo.png" alt="618 Dönər Logo" class="logo-img" />
+      <span class="logo-text">618 Dönər</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menyu aç">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Ana Səhifə</a></li>
+      <li><a href="menu.html">Menyu</a></li>
+      <li><a href="gallery.html">Qalerya</a></li>
+      <li><a href="order.html">Sifariş</a></li>
+      <li><a href="about.html" class="active">Haqqında</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Əlaqə</a></li>
+    </ul>
+  </div>
+</nav>
+
+<button class="cart-fab" id="cartFab" onclick="window.location.href='order.html'">
+  <i class="fas fa-shopping-basket"></i>
+  <span class="cart-badge" id="cartBadge">0</span>
+</button>
+
+<section class="page-header">
+  <div class="container">
+    <h1>Haqqımızda</h1>
+    <p>Bizi tanıyın</p>
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-col">
+        <img src="assets/susi.jpg" alt="618 Dönər" class="about-img" />
+      </div>
+      <div class="about-text-col">
+        <h2>618 Dönər Haqqında</h2>
+        <p>
+          Biz keyfiyyəti ön plana çəkərək müştərilərimizə ən dadlı dönər təcrübəsini təqdim edirik.
+          Hər bir məhsulumuz təzə ingredientlərdən hazırlanır və yüksək gigiyena standartlarına uyğun xidmət göstəririk.
+        </p>
+        <p>
+          Məqsədimiz hər müştərimizi məmnun etmək və onlara ev rahatlığında keyfiyyətli fast food təqdim etməkdir.
+          Pulsuz çatdırılma xidmətimiz ilə sifarişiniz qapınıza çatır.
+        </p>
+        <div class="about-stats">
+          <div class="stat-item">
+            <span class="stat-num">100+</span>
+            <span class="stat-label">Gündəlik Sifariş</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">500+</span>
+            <span class="stat-label">Məmnun Müştəri</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">5★</span>
+            <span class="stat-label">Ortalama Reytinq</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Working Hours -->
+<section class="hours-section">
+  <div class="container">
+    <h2 class="section-title">İş Saatları</h2>
+    <div class="hours-card">
+      <div class="hours-grid">
+        <div class="hours-row">
+          <span class="day-label"><i class="fas fa-calendar-day"></i> Bazar ertəsi</span>
+          <span class="hours-val open">10:00 – 22:00</span>
+        </div>
+        <div class="hours-row">
+          <span class="day-label"><i class="fas fa-calendar-day"></i> Çərşənbə axşamı</span>
+          <span class="hours-val open">10:00 – 22:00</span>
+        </div>
+        <div class="hours-row">
+          <span class="day-label"><i class="fas fa-calendar-day"></i> Çərşənbə</span>
+          <span class="hours-val open">10:00 – 22:00</span>
+        </div>
+        <div class="hours-row">
+          <span class="day-label"><i class="fas fa-calendar-day"></i> Cümə axşamı</span>
+          <span class="hours-val open">10:00 – 22:00</span>
+        </div>
+        <div class="hours-row">
+          <span class="day-label"><i class="fas fa-calendar-day"></i> Cümə</span>
+          <span class="hours-val open">10:00 – 23:00</span>
+        </div>
+        <div class="hours-row">
+          <span class="day-label"><i class="fas fa-calendar-day"></i> Şənbə</span>
+          <span class="hours-val open">10:00 – 23:00</span>
+        </div>
+        <div class="hours-row">
+          <span class="day-label"><i class="fas fa-calendar-day"></i> Bazar</span>
+          <span class="hours-val open">11:00 – 22:00</span>
+        </div>
+      </div>
+      <div class="hours-note">
+        <i class="fas fa-info-circle"></i>
+        <span id="currentStatus"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Values -->
+<section class="values-section">
+  <div class="container">
+    <h2 class="section-title">Dəyərlərimiz</h2>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="value-icon"><i class="fas fa-leaf"></i></div>
+        <h3>Təzəlik</h3>
+        <p>Hər gün təzə ingredientlər istifadə edirik</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon"><i class="fas fa-heart"></i></div>
+        <h3>Sevgi ilə Hazırlanır</h3>
+        <p>Hər məhsul sevgi və diqqətlə hazırlanır</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon"><i class="fas fa-shield-alt"></i></div>
+        <h3>Gigiyena</h3>
+        <p>Ən yüksək gigiyena standartlarına riayət edirik</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon"><i class="fas fa-smile"></i></div>
+        <h3>Müştəri Məmnuniyyəti</h3>
+        <p>Müştəri məmnuniyyəti bizim üçün hər şeydən önəmlidir</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Logo" class="footer-logo" />
+        <span>618 Dönər</span>
+        <p>Ən dadlı dönər təcrübəsi üçün</p>
+      </div>
+      <div class="footer-links">
+        <h4>Keçidlər</h4>
+        <ul>
+          <li><a href="menu.html">Menyu</a></li>
+          <li><a href="gallery.html">Qalerya</a></li>
+          <li><a href="order.html">Sifariş</a></li>
+          <li><a href="about.html">Haqqında</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Əlaqə</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Əlaqə</h4>
+        <a href="https://wa.me/994559406018" target="_blank"><i class="fab fa-whatsapp"></i> +994 55 940 60 18</a>
+        <a href="https://www.instagram.com/618_acc?igsh=eGZ6NDBqbnltbzJv" target="_blank"><i class="fab fa-instagram"></i> @618_acc</a>
+        <a href="https://maps.app.goo.gl/seymCjLMXh1QxUP86" target="_blank"><i class="fas fa-map-marker-alt"></i> Məkanımız</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 618 Dönər. Bütün hüquqlar qorunur.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/about.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>618 Dönər | Əlaqə</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo.png" alt="618 Dönər Logo" class="logo-img" />
+      <span class="logo-text">618 Dönər</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menyu aç">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Ana Səhifə</a></li>
+      <li><a href="menu.html">Menyu</a></li>
+      <li><a href="gallery.html">Qalerya</a></li>
+      <li><a href="order.html">Sifariş</a></li>
+      <li><a href="about.html">Haqqında</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html" class="active">Əlaqə</a></li>
+    </ul>
+  </div>
+</nav>
+
+<button class="cart-fab" id="cartFab" onclick="window.location.href='order.html'">
+  <i class="fas fa-shopping-basket"></i>
+  <span class="cart-badge" id="cartBadge">0</span>
+</button>
+
+<section class="page-header">
+  <div class="container">
+    <h1>Əlaqə</h1>
+    <p>Bizimlə əlaqə saxlayın</p>
+  </div>
+</section>
+
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <div class="contact-card">
+        <div class="contact-icon whatsapp-icon">
+          <i class="fab fa-whatsapp"></i>
+        </div>
+        <h3>WhatsApp</h3>
+        <p>Sifariş üçün və ya hər hansı sual üçün yazın</p>
+        <a href="https://wa.me/994559406018" target="_blank" class="contact-link whatsapp-link">
+          <i class="fab fa-whatsapp"></i> +994 55 940 60 18
+        </a>
+        <small>Mesaja basdıqda WhatsApp tətbiqi açılır</small>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon instagram-icon">
+          <i class="fab fa-instagram"></i>
+        </div>
+        <h3>Instagram</h3>
+        <p>İnstagramda bizi izləyin, yeniliklərdən xəbərdar olun</p>
+        <a href="https://www.instagram.com/618_acc?igsh=eGZ6NDBqbnltbzJv" target="_blank" class="contact-link instagram-link">
+          <i class="fab fa-instagram"></i> @618_acc
+        </a>
+        <small>Basdıqda Instagram tətbiqi açılır</small>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon location-icon">
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <h3>Məkan</h3>
+        <p>Bizi ziyarət edin</p>
+        <a href="https://maps.app.goo.gl/seymCjLMXh1QxUP86" target="_blank" class="contact-link location-link">
+          <i class="fas fa-map-marker-alt"></i> Xəritədə Bax
+        </a>
+        <small>Basdıqda Xəritə tətbiqi açılır</small>
+      </div>
+
+    </div>
+
+    <!-- Map embed placeholder -->
+    <div class="map-section">
+      <h2 class="section-title">Məkanımız</h2>
+      <div class="map-wrap">
+        <a href="https://maps.app.goo.gl/seymCjLMXh1QxUP86" target="_blank" class="map-placeholder">
+          <div class="map-placeholder-inner">
+            <i class="fas fa-map-marked-alt"></i>
+            <p>Xəritədə Aç</p>
+            <small>Google Maps-də məkanımızı görün</small>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Logo" class="footer-logo" />
+        <span>618 Dönər</span>
+        <p>Ən dadlı dönər təcrübəsi üçün</p>
+      </div>
+      <div class="footer-links">
+        <h4>Keçidlər</h4>
+        <ul>
+          <li><a href="menu.html">Menyu</a></li>
+          <li><a href="gallery.html">Qalerya</a></li>
+          <li><a href="order.html">Sifariş</a></li>
+          <li><a href="about.html">Haqqında</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Əlaqə</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Əlaqə</h4>
+        <a href="https://wa.me/994559406018" target="_blank"><i class="fab fa-whatsapp"></i> +994 55 940 60 18</a>
+        <a href="https://www.instagram.com/618_acc?igsh=eGZ6NDBqbnltbzJv" target="_blank"><i class="fab fa-instagram"></i> @618_acc</a>
+        <a href="https://maps.app.goo.gl/seymCjLMXh1QxUP86" target="_blank"><i class="fas fa-map-marker-alt"></i> Məkanımız</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 618 Dönər. Bütün hüquqlar qorunur.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/nav.js"></script>
+</body>
+</html>
