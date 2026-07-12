@@ -9,7 +9,7 @@
    DATA
    ============================================================ */
 const PRODUCTS = [
-  { id:1,  name:"Dürüm",           price:3.5,  category:"fastfood",  image:"assets/susi.jpg",  desc:"Keyfiyyətli dönər əti, təzə tərəvəzlər və xüsusi sous ilə hazırlanmış klassik dürüm. Hər loğmada əsl ləzzət!", popular:true  },
+  { id:1,  name:"Dürüm",           price:3.5,  category:"fastfood",  image:"assets/dürüm.jpg",  desc:"Keyfiyyətli dönər əti, təzə tərəvəzlər və xüsusi sous ilə hazırlanmış klassik dürüm. Hər loğmada əsl ləzzət!", popular:true  },
   { id:2,  name:"Tələbə Dürüm",    price:3.0,  category:"fastfood",  image:"assets/susi.jpg",  desc:"Büdcəyə uyğun, eyni keyfiyyətli dönər əti ilə hazırlanmış gənc dürümü. Dadlı və sərfəli!", popular:true  },
   { id:3,  name:"Duble Dürüm",     price:4.5,  category:"fastfood",  image:"assets/susi.jpg",  desc:"İkiqat dönər əti ilə hazırlanmış böyük dürüm. Daha çox ərzaq, daha çox ləzzət – iştahı böyük olanlar üçün ideal!", popular:true  },
   { id:4,  name:"Mega Dürüm",      price:5.5,  category:"fastfood",  image:"assets/susi.jpg",  desc:"Nəhəng porsiya dönər əti, bol tərəvəz və xüsusi sous ilə hazırlanmış mega dürüm. Əsl doyumlu seçim!", popular:false },
